@@ -1,0 +1,229 @@
+{
+  "base_sha": "25dfb70d17633887b0b2b8baecacfa5778094154",
+  "change_source": "compare",
+  "changed_component_count": 4,
+  "changed_components": [
+    "[root]",
+    "src",
+    "static",
+    "tests"
+  ],
+  "changed_file_count": 46,
+  "changed_function_count": 26,
+  "changed_functions": [
+    "button.snapshots.OversizedContent",
+    "components.SecondaryNavigationFeatureBadgeProps",
+    "components.SectionTitle",
+    "eapSpanNode.EapSpanNode",
+    "exploreSecondaryNavigation.ExploreSecondaryNavigationImpl",
+    "index.EAPSpanNodeDetails",
+    "issuesSecondaryNavigation.IssuesSecondaryNavigationImpl",
+    "nodeDetails.NodeDetails",
+    "seerSecondaryNavigation.SeerSecondaryNavigationImpl",
+    "serverRender.PageloadServerRendering",
+    "serverRender.ServerRenderNodeDetails",
+    "serverRenderNode.ServerRenderNode",
+    "serverRendering.PageServerRendering",
+    "serverRendering.ServerRender",
+    "serverRendering.ServerRenderingSection",
+    "serverRendering.ServerRenderingSectionProps",
+    "serverRendering.SharedRender",
+    "settingsNavigation.SettingsProjectSelector",
+    "src.sentry.migrations.1260_backfill_projectartifactbundle_has_debug_ids.backfill_has_debug_ids",
+    "src.sentry.migrations.1260_backfill_projectartifactbundle_has_debug_ids.backfill_has_debug_ids.batch_end",
+    "src.sentry.tasks.assemble.ArtifactBundlePostAssembler._create_artifact_bundle",
+    "src.sentry.tasks.seer.agentic_triage.cron.run_agentic_triage_for_org",
+    "traceServerRenderRow.TraceServerRenderRow",
+    "traceTree.TraceTree",
+    "useLinkedSpanTarget.UseLinkedSpanTargetOptions",
+    "useLinkedSpanTarget.onClick"
+  ],
+  "deploy_targets": [],
+  "head_sha": "07730bf91bd4a97272f69ee05a8b3430758f816f",
+  "impacted_test_count": 10,
+  "impacted_tests": [
+    "static/app/views/navigation/secondary/components.spec.tsx",
+    "static/app/views/navigation/secondary/sections/explore/exploreSecondaryNavigation.spec.tsx",
+    "static/app/views/navigation/secondary/sections/issues/issuesSecondaryNavigation.spec.tsx",
+    "tests/sentry/api/endpoints/test_project_create_sample.py",
+    "tests/sentry/core/endpoints/test_team_projects.py",
+    "tests/sentry/integrations/github/test_multi_platform_detection.py",
+    "tests/sentry/integrations/github/test_platform_registry.py",
+    "tests/sentry/migrations/test_1260_backfill_projectartifactbundle_has_debug_ids.py",
+    "tests/sentry/tasks/seer/test_agentic_triage.py",
+    "tests/sentry/tasks/test_assemble.py"
+  ],
+  "lists_truncated": false,
+  "reason": "Some changed source files have no confirmed impacted test; run the repository's full test suite.",
+  "requires_full_suite": true,
+  "schema_version": 1,
+  "test_selection": [
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "src/sentry/tasks/seer/agentic_triage/cron.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "name_scan"
+      ],
+      "test_file": "tests/sentry/tasks/seer/test_agentic_triage.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "static/app/views/navigation/secondary/components.tsx"
+      ],
+      "changed_files_truncated": false,
+      "language": "javascript",
+      "selected_by": [
+        "file_convention"
+      ],
+      "test_file": "static/app/views/navigation/secondary/components.spec.tsx"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "static/app/views/navigation/secondary/sections/explore/exploreSecondaryNavigation.tsx"
+      ],
+      "changed_files_truncated": false,
+      "language": "javascript",
+      "selected_by": [
+        "file_convention"
+      ],
+      "test_file": "static/app/views/navigation/secondary/sections/explore/exploreSecondaryNavigation.spec.tsx"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "static/app/views/navigation/secondary/sections/issues/issuesSecondaryNavigation.tsx"
+      ],
+      "changed_files_truncated": false,
+      "language": "javascript",
+      "selected_by": [
+        "file_convention"
+      ],
+      "test_file": "static/app/views/navigation/secondary/sections/issues/issuesSecondaryNavigation.spec.tsx"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/api/endpoints/test_project_create_sample.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/api/endpoints/test_project_create_sample.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/core/endpoints/test_team_projects.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/core/endpoints/test_team_projects.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/integrations/github/test_multi_platform_detection.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/integrations/github/test_multi_platform_detection.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/integrations/github/test_platform_registry.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/integrations/github/test_platform_registry.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/migrations/test_1260_backfill_projectartifactbundle_has_debug_ids.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/migrations/test_1260_backfill_projectartifactbundle_has_debug_ids.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/tasks/seer/test_agentic_triage.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/tasks/seer/test_agentic_triage.py"
+    },
+    {
+      "changed_file_count": 1,
+      "changed_files": [
+        "tests/sentry/tasks/test_assemble.py"
+      ],
+      "changed_files_truncated": false,
+      "language": "python",
+      "selected_by": [
+        "changed_test"
+      ],
+      "test_file": "tests/sentry/tasks/test_assemble.py"
+    }
+  ],
+  "unresolved_file_count": 32,
+  "unresolved_files": [
+    "src/sentry/api/endpoints/project_create_sample.py",
+    "src/sentry/dynamic_sampling/rules/helpers/time_to_adoptions.py",
+    "src/sentry/integrations/github/platform_registry.py",
+    "src/sentry/migrations/1259_add_projectartifactbundle_has_debug_ids.py",
+    "src/sentry/migrations/1260_backfill_projectartifactbundle_has_debug_ids.py",
+    "src/sentry/migrations/1261_add_projectartifactbundle_debug_ids_index.py",
+    "src/sentry/models/artifactbundle.py",
+    "src/sentry/models/project.py",
+    "src/sentry/tasks/assemble.py",
+    "src/sentry/utils/platform_categories.py",
+    "static/app/components/core/button/button.snapshots.tsx",
+    "static/app/views/navigation/secondary/sections/seer/seerSecondaryNavigation.tsx",
+    "static/app/views/performance/traceDetails/index.tsx",
+    "static/app/views/performance/traceDetails/serverRendering/serverRendering.spec.ts",
+    "static/app/views/performance/traceDetails/serverRendering/serverRendering.ts",
+    "static/app/views/performance/traceDetails/traceDrawer/details/nodeDetails.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/serverRender.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/span/eapSections/cacheLifecycle.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/span/eapSections/serverRendering.spec.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/span/eapSections/serverRendering.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/span/eapSections/useLinkedSpanTarget.tsx",
+    "static/app/views/performance/traceDetails/traceDrawer/details/span/index.tsx",
+    "static/app/views/performance/traceDetails/traceGuards.tsx",
+    "static/app/views/performance/traceDetails/traceModels/traceTree.serverRendering.spec.tsx",
+    "static/app/views/performance/traceDetails/traceModels/traceTree.tsx",
+    "static/app/views/performance/traceDetails/traceModels/traceTreeNode/eapSpanNode.tsx",
+    "static/app/views/performance/traceDetails/traceModels/traceTreeNode/serverRenderNode.tsx",
+    "static/app/views/performance/traceDetails/traceRow/traceServerRenderRow.tsx",
+    "static/app/views/settings/components/settingsNavItem.tsx",
+    "static/app/views/settings/components/settingsNavigation.tsx",
+    "static/app/views/settings/organization/userOrgNavigationConfiguration.tsx",
+    "static/packages/scraps/src/button/styles.tsx"
+  ]
+}
